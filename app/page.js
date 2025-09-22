@@ -3,7 +3,7 @@
 
 const Page = () => {
   const handleClick = () => {
-   alert('Button clicked!');
+   alert('Hy Anwar');
   }
   return (
     <div>
