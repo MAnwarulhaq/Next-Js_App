@@ -6,10 +6,14 @@ import { useRouter } from "next/navigation";
 
 const Page = () => {
   const handleClick = () => {
-   alert('Hy Anwar');
+    alert('Hy Anwar');
   }
 
-  const router=useRouter()
+  const navigation=(name)=>{
+    router.push(name)
+  }
+
+  const router = useRouter()
 
   return (
     <div>
@@ -17,7 +21,16 @@ const Page = () => {
       {/* <button onClick={() => alert('Button Clicked!')}>Click Me</button>
       <button onClick={handleClick}>Log to Console</button> */}
       <Link href='/login'>Go to Login Page</Link>
-      <button onClick={()=>router.push('/login')}>Login</button>
+      <br/>
+      <br/>
+      <Link href='/about'>Go to Login Page</Link>
+      <br/>
+      <br/>
+
+      {/* <button onClick={() => router.push('/login')}>Login Page</button> */}
+      <button onClick={() => navigation('/login')}>Login Page</button>
+      <button onClick={()=>navigation('/about')}>About page</button>
+
     </div>
   )
 }
