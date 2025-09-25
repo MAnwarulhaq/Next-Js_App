@@ -23,7 +23,7 @@ const Page = () => {
       <Link href='/login'>Go to Login Page</Link>
       <br/>
       <br/>
-      <Link href='/about'>Go to Login Page</Link>
+      <Link href='/about'>Go to About Page</Link>
       <br/>
       <br/>
 

@@ -4,7 +4,13 @@ import Link from "next/link";
     return(
         <div>
             Login Page
-            <Link href='./'>Home Page</Link>
+            <br/><br/>
+            <Link href='/'>Home Page</Link>
+            <br/><br/>
+
+            <Link href='/login/studentlogin'>student Login</Link>
+            <br/><br/>
+            <Link href='/login/teacherlogin'>Teacher Login</Link>
         </div>
     )
  }
