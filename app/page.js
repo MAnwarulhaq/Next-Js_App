@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 
 
 const Page = () => {
+   const router = useRouter()
   const handleClick = () => {
     alert('Hy Anwar');
   }
@@ -13,7 +14,7 @@ const Page = () => {
     router.push(name)
   }
 
-  const router = useRouter()
+ 
 
   return (
     <div>

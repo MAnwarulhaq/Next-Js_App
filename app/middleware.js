@@ -1,10 +1,8 @@
-import { NextResponse } from "next/server"
+// middleware.js
+import { NextResponse } from 'next/server'
 
-export function middleware(request){
- return NextResponse.redirect(new URL('/login',request.url))
-
-} 
-
-export const config = {
-  matcher: ["/students/:path*"], 
-};
+export function middleware(request) {
+   console.log("Middleware")
+  return NextResponse.redirect(new URL('/login', request.url))
+ 
+}
