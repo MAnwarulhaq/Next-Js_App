@@ -4,9 +4,10 @@ export default function Layout ({children})
 {
     return (
         <div>
+            
            <ul>
             <li>
-                <Link href="/login">Main Login</Link>
+                <Link href="/login"> Login Page</Link>
             </li>
              <li>
                 <Link href="/login/studentlogin">Students Login</Link>

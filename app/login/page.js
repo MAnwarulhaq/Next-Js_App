@@ -3,7 +3,7 @@ import Link from "next/link";
  const Login = ()=>{
     return(
         <div>
-            Login Page
+            <h1> Login Page</h1>
             <br/><br/>
             <Link href='/'>Home Page</Link>
             <br/><br/>
